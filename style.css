@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: none;
+}
+
+/* IE / eski Edge */
+* {
+    -ms-overflow-style: none;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 0vh;
+    width: 100vw;
+    /* background-color: rgba(174, 0, 255, 0.521); */
+}
+
+.blue-circle {
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+    top: -70px;
+    left: -25px;
+    width: 381px;
+    height: 210px;
+    background-color: #a31646;
+}
+
+.left-aside {
+    position: relative;
+    overflow: hidden;
+    width: 18vw;
+    height: inherit;
+    background-color: #ccc;
+    border-right: 1px solid white;
+}
+
+.left-aside .profile {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    height: fit-content;
+    /* background-color: rgb(72, 255, 0); */
+    overflow: hidden;
+}
+
+.left-aside .profile p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    color: white;
+}
+
+.left-aside .profile img {
+    height: 180px;
+    width: 185px;
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    padding: 10px 15px;
+    margin-top: 230px;
+    width: 100%;
+    height: fit-content;
+    /* background-color: blanchedalmond; */
+}
+h2 {
+    font-weight: 400;
+    color: #a31646;
+}
+
+.hr {
+    width: 100%;
+    height: 2px;
+    margin-top: 5px;
+    background-color: #ccc;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    width: 100%;
+}
+
+.boxes1 {
+    display: flex;
+    height: fit-content;
+    /* background-color: salmon; */
+    flex-direction: column;
+    row-gap: 6px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    height: 39px;
+    align-items: center;
+    /* padding-left: 10px; */
+    column-gap: 6px;
+    /* background-color: darkcyan; */
+}
+
+.box1 {
+    padding-top: 4px;
+    display: flex;
+    width: 100%;
+    height: 35px;
+    align-items: start;
+    /* padding-left: 10px; */
+    column-gap: 6px;
+    /* background-color: darkcyan; */
+}
+.box p {
+    font-size: 15px;
+}
+p {
+    font-size: 16px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    padding: 5px 15px;
+    /* margin-bottom: 3vh; */
+    width: 100%;
+    height: fit-content;
+    /* background-color: salmon; */
+}
+.text {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.language {
+    width: 100%;
+    height: 95px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+    /* justify-content: left; */
+    padding: 5px 15px;
+}
+
+/*! MAİN CONTENT*/
+
+.main-content {
+    width: 82vw;
+    height: inherit;
+    background-color: whitesmoke;
+    padding: 10px 35px;
+    overflow: scroll;
+}
+
+.main-content h2 {
+    margin-bottom: 10px;
+}
+
+.text-boxes {
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 0px;
+    width: 100%;
+    height: fit-content;
+    /* background-color: chocolate; */
+}
+
+.box22 {
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 0.5vh;
+    width: 100%;
+    align-content: center;
+    height: fit-content;
+    /* background-color: chocolate; */
+    /* justify-self: center; */
+}
+.text-box {
+    /* margin-top: 10px; */
+    padding: 6px 0px;
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+.text1 h4 {
+    font-weight: 500;
+}
+
+.text1 .faculty {
+    color: #a31646;
+}
+
+.text2 .tarih {
+    font-weight: 600;
+    color: #a31646;
+}
+
+#is-gecmisi {
+    margin-top: 15px;
+}
+
+.boxes-resume {
+    height: fit-content;
+    width: 100%;
+    margin: 0.5vh;
+    padding: 0.5vh 0;
+    /* background-color: seagreen; */
+}
+.resume-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 10px; */
+}
+
+.boxes-right {
+    color: #a31646;
+    font-size: 15px;
+    font-weight: 500;
+}
+.boxes-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+i {
+    color: #a31646;
+    padding-right: 5px;
+}
+
+.resume-explanation {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 650px;
+    padding: 10px 0;
+}
+
+.tanim {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.aciklama {
+    display: flex;
+    line-height: 20px;
+    width: fit-content;
+    height: fit-content;
+    /* background-color: saddlebrown; */
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 0.5vh;
+    align-self: center;
+}
+
+.personalinf {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+}
+
+.boxes1 p {
+    line-height: 20px;
+}
+
+h4 {
+    font-weight: 500;
+}
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+/* Genel düzeltmeler */
+.container {
+    min-height: 100vh;
+    height: auto;
+}
+
+/* DESKTOP (varsayılan zaten iyi) */
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left-aside {
+        width: 300px;
+        min-width: 300px;
+        height: 100vh;
+    }
+
+    .main-content {
+        width: calc(100% - 300px);
+        height: 100vh;
+    }
+}
+
+/* TABLET */
+@media (max-width: 1023px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-aside {
+        width: 100%;
+        height: auto;
+        border-right: none;
+    }
+
+    .blue-circle {
+        left: 100px;
+        width: 600px;
+        height: 180px;
+    }
+
+    .main-content {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+        padding: 20px;
+    }
+
+    .resume-explanation {
+        width: 100%;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .profile img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .blue-circle {
+        width: 600px;
+        left: -40px;
+        height: 180px;
+    }
+
+    .left-aside .profile p {
+        font-size: 18px;
+    }
+
+    .personal-info,
+    .skills,
+    .language {
+        padding: 10px;
+    }
+
+    .box p,
+    p {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .text-box {
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    .boxes-resume .resume-box {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 5px;
+    }
+
+    .boxes-right {
+        font-size: 14px;
+    }
+
+    .resume-explanation {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .aciklama {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+}
